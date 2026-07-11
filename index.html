@@ -184,6 +184,57 @@ footer{margin-top:44px;border-radius:24px;position:relative;z-index:1;
   box-shadow:0 4px 10px rgba(168,130,58,.3)}
 @media(max-width:760px){.f-feats{margin-left:0}}
 
+/* ---------- MOBILE ---------- */
+@media(max-width:640px){
+  body{padding:10px 9px 36px}
+  body::before,body::after{display:none}
+  .hero{padding:18px 12px 16px;border-radius:18px}
+  .hero-top{gap:10px}
+  .logo-ring img{width:76px;height:76px;box-shadow:0 0 0 4px #FFFDF4,0 0 0 5px var(--gold-l)}
+  h1{font-size:30px}
+  .h-sub{font-size:15px}
+  .h-desc{font-size:11.5px}
+  .count-pill{font-size:11.5px;padding:7px 14px;margin-top:10px}
+  .badge-premium{width:76px;height:76px;border-width:2px}
+  .badge-premium b{font-size:10px}
+  .badge-premium span{font-size:6px}
+  .hero-qr{display:none}
+  /* แถบเครื่องมือไม่ลอยตามจอบนมือถือ จะได้ไม่บังสินค้า */
+  .toolbar{position:static;padding:9px 10px;gap:7px;border-radius:14px}
+  .search{flex:1 1 100%;padding:8px 14px}
+  .search input{font-size:13px}
+  select{font-size:12px;padding:8px 12px}
+  .tgl{font-size:11.5px;padding:7px 11px}
+  .btn-print{font-size:12px;padding:9px 16px}
+  .chips{padding:8px 2px 4px}
+  .chip{font-size:11.5px;padding:7px 13px}
+  .ribbon-wrap{margin:12px 0 12px}
+  .ribbon{font-size:14px;padding:9px 26px}
+  .ribbon::before,.ribbon::after{display:none}
+  .count-line{margin:-6px 0 10px;font-size:11px}
+  /* การ์ด 2 คอลัมน์ กะทัดรัด */
+  .grid{grid-template-columns:repeat(2,1fr);gap:9px}
+  .card{border-radius:13px}
+  .card:hover{transform:none}
+  .cbody{padding:8px 7px 10px;gap:4px}
+  .cat-tag{display:none}
+  .cname{font-size:11px;line-height:1.4;min-height:2.8em}
+  .price-pill{font-size:12px;padding:4px 13px}
+  .price-pill.ask{font-size:10.5px}
+  .sold{font-size:9.5px}
+  .qr-mini{width:40px;height:40px;right:6px;bottom:6px;border-radius:8px}
+  .badge-hot{font-size:8.5px;padding:3px 8px;top:7px;right:7px}
+  .badge-out span{font-size:10.5px;padding:5px 12px}
+  .ck{width:22px;height:22px;border-radius:7px;top:7px;left:7px}
+  .ck svg{width:11px;height:11px}
+  footer{padding:16px 16px;gap:14px;border-radius:16px;margin-top:28px}
+  .f-order{font-size:20px}
+  .f-url{font-size:12px;padding:7px 14px}
+  .f-qr img{width:84px;height:84px}
+  .f-feat{font-size:11.5px}
+  .f-feat .fi{width:32px;height:32px;font-size:14px}
+}
+
 /* ---------- PRINT ---------- */
 @media print{
   @page{size:A4;margin:9mm}
